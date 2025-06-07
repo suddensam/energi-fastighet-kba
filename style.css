@@ -1,15 +1,27 @@
+/* Importeras via <head> i HTML: 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+*/
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background: #ffffff;
     color: #2e4633;
+    line-height: 1.6;
 }
 
+/* Header med logga + rubrik */
 header {
-    background-color: #e6efe9;
     text-align: center;
+    background-color: #e6efe9;
     padding: 40px 20px;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -18,19 +30,70 @@ h1 {
     color: #2e4633;
 }
 
-.about, .contact {
-    padding: 40px 20px;
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Hero-bild */
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Innehållssektioner */
+.content, .contact {
     max-width: 800px;
     margin: auto;
+    padding: 40px 20px;
 }
 
 h2 {
+    font-size: 1.5em;
     color: #39684d;
+    margin-top: 0;
 }
 
+.contact-person {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+a {
+    color: #2e4633;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    background-color: #e6efe9;
     text-align: center;
     padding: 20px;
+    background-color: #e6efe9;
     color: #2e4633;
+    font-size: 0.9rem;
+}
+
+/* Mobilanpassning */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .content, .contact {
+        padding: 30px 15px;
+    }
 }
